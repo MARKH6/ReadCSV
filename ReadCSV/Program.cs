@@ -34,7 +34,7 @@ namespace ReadCSV
                     record = line.Split(',');
 
                    
-                    newline = String.Format("{0},{1},{2},{3}",count, record[0], record[1], record[2]);
+                    newline = String.Format("{0},{1},{2},{3},{4}",count,"Name-"+count, record[0], record[1], record[2]);
 
                     sw.WriteLine(newline);
                     count++;
