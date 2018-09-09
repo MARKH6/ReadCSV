@@ -13,9 +13,9 @@ namespace ReadCSV
         {
 
             //User Info Table
-            const string existingFile = "ExistingFile.csv";
+            const string existingFile = @"..\..\ExistingFile.csv";
             List<string> lines = new List<string>();
-            StreamWriter sw = new StreamWriter("NewFile.csv");
+            StreamWriter sw = new StreamWriter(@"..\..\NewFile.csv");
 
             using (StreamReader sr = new StreamReader(existingFile))
             {
